@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Miho Ishikawaのポートフォリオサイトです。">
+  <title>Miho Ishikawa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+  <header>
+    <!-- PC用ナビゲーション -->
+    <nav>
+      <div id="myprofile">
+        <h1 class="menu">MyProfile</h1>
+      </div>
+      <div id="menu">
+        <a class="menu" href="index.html#about">About</a>
+        <a class="menu" href="index.html#works">Works</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- メインビジュアル -->
+    <div id="main-visual">
+      <div class="carousel">
+        <div>
+          <img src="image/main1.jpg" class="carouselImg">
+        </div>
+        <div>
+          <img src="image/main2.jpg" class="carouselImg">
+        </div>
+        <div>
+          <img src="image/main3.jpg" class="carouselImg">
+        </div>
+        <div>
+          <img src="image/main4.jpg" class="carouselImg">
+        </div>
+      </div>
+    </div>
+    
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <div id="about-content">
+        <img src="image/about.png" alt="サーフボードの間でピースする自分">
+        <div id="about-text">
+          <h3>Miho Ishikawa</h3>
+          <ul>
+            <li>30歳 三重県出身</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works">
+      <h2>Works</h2>
+      <ul id="works-content">
+        <li class="works-case">
+          <div>
+            <img src="image/works1.png" alt="10月のもくもく会" class="case-img">
+          </div>
+          <div class="case-text">
+            <p class="product-time">制作時間：3h</p>
+            <p class="impression">印象：busy</p>
+          </div>
+        </li>
+        <li class="works-case">
+          <div>
+            <img src="image/works2.png" alt="11月のもくもく会" class="case-img">
+          </div>
+          <div class="case-text">
+            <p class="product-time">制作時間：3h</p>
+            <p class="impression">印象：interesting</p>
+          </div>
+        </li>
+      </ul>
+      <div id="modal" class="modal">
+        <button class="close">×</button>
+        <img class="modalImg" src=" ">
+      </div>
+    </section>
+
+    <a href="#" id="backBtn">TOP</a>
+
+  </main>
+  <footer>
+    <p><small>&copy; MyProfile. All right reserved.</small></p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
