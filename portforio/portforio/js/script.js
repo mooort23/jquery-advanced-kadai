@@ -35,32 +35,35 @@ $(function() {
   // スクロール
   $('a[href^="#"]').on('click', function(){
 
-    const href = $((this).attr('href'));
-    const position = $('href').offset().top;
+    const href = $(this).attr('href');
+    
+    let target;
 
     if(href == "#") {
-      $('html,body').animate({
-        scrollTop: html
-      },1000);
+      target = $('html');
     } else {
-      $('html,body').animate({
-        scrollTop: position
-      },1000);
+      target = $('href');
     }
+
+    const position = $('target').offset().top;
+
+    $('html,body').animate({scrollTop: posotion}, 400, 'swing');
+
   });
 
   // フェードイン
   $(window).on('scroll', function(){
 
+    $('section').each(function(){
+
     const winScroll = $(window).scrollTop();
     const winHeight = $(window).height(); 
-    const scrollPos = winScroll + winHeight;
-    const sectionPos = $('section').offset().top;
+    const sectionPos = $(this).offset().top;
 
-    if(sectionPos < scrollPos) {
-      $('section').addClass('fadeIn');
-    } 
-
+      if(winScroll > sectionPos - winHeight + 100) {
+        $(this).addClass('fadeIn');
+      } 
+    });
   });
 
   // モーダルウィンドウ
