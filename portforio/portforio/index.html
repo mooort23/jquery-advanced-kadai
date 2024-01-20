@@ -28,6 +28,15 @@
     </nav>
   </header>
   <main>
+    <!-- loading -->
+    <div id="loading">
+      <div id="loading_box">
+        <div class="loading-one animation_lading">
+          <p class="lading-txt">loading...</p>
+        </div>
+      </div>
+    </div>
+
     <!-- メインビジュアル -->
     <div id="main-visual">
       <div class="carousel">
@@ -48,44 +57,52 @@
     
     <!-- About -->
     <section id="about">
-      <h2>About</h2>
-      <div id="about-content">
-        <img src="image/about.png" alt="サーフボードの間でピースする自分">
-        <div id="about-text">
-          <h3>Miho Ishikawa</h3>
-          <ul>
-            <li>30歳 三重県出身</li>
-          </ul>
+      <div class="a-item">
+        <h2 class="title">About</h2>
+        <div class="a-content">
+          <div id="about-content">
+            <img src="image/about.png" alt="サーフボードの間でピースする自分">
+            <div id="about-text">
+              <h3>Miho Ishikawa</h3>
+              <ul>
+                <li>30歳 三重県出身</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </div> 
     </section>
 
     <!-- Works -->
     <section id="works">
-      <h2>Works</h2>
-      <ul id="works-content">
-        <li class="works-case">
-          <div>
-            <img src="image/works1.png" alt="10月のもくもく会" class="case-img">
+      <div class="a-item">
+        <h2 class="title">Works</h2>
+        <div class="a-content">
+          <ul id="works-content">
+            <li class="works-case">
+              <div>
+                <img src="image/works1.png" alt="10月のもくもく会" class="case-img">
+              </div>
+              <div class="case-text">
+                <p class="product-time">制作時間：3h</p>
+                <p class="impression">印象：busy</p>
+              </div>
+            </li>
+            <li class="works-case">
+              <div>
+                <img src="image/works2.png" alt="11月のもくもく会" class="case-img">
+              </div>
+              <div class="case-text">
+                <p class="product-time">制作時間：3h</p>
+                <p class="impression">印象：interesting</p>
+              </div>
+            </li>
+          </ul>
+          <div id="modal" class="modal">
+            <button class="close">×</button>
+            <img class="modalImg" src=" ">
           </div>
-          <div class="case-text">
-            <p class="product-time">制作時間：3h</p>
-            <p class="impression">印象：busy</p>
-          </div>
-        </li>
-        <li class="works-case">
-          <div>
-            <img src="image/works2.png" alt="11月のもくもく会" class="case-img">
-          </div>
-          <div class="case-text">
-            <p class="product-time">制作時間：3h</p>
-            <p class="impression">印象：interesting</p>
-          </div>
-        </li>
-      </ul>
-      <div id="modal" class="modal">
-        <button class="close">×</button>
-        <img class="modalImg" src=" ">
+        </div>
       </div>
     </section>
 

@@ -1,3 +1,9 @@
+// loading
+$(window).on('load', function() {
+  $('#loading').delay(1000).fadeOut('slow');
+  $('#loading_box').delay(1200).fadeOut('slow');
+});
+
 $(function() {
 
   // カルーセル
@@ -75,6 +81,12 @@ $(function() {
   
   $('.close').on('click', function(){
     $('.modal').css('display','none')
+  });
+
+  // アコーディオン
+  $('.title').on('click', function(){
+    $(this).toggleClass('open');
+    $(this).next('.a-content').slideToggle();    
   });
 
 });
